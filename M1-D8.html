@@ -1,6 +1,7 @@
 
 <html>
   <head>
+    <title>Testing</title>
     <style>
       .myHeading {
         color: red;
@@ -60,12 +61,17 @@
       </h2>
     </div>
     <script>
+
+      window.onload = function () {
+          alert("Welcome!!")
+
+        };
       /* EXERCISE 1
        Write a function for changing the title of the document in something else.
       */
 
       const changeTitle = function (newTitle) {
-        document.querySelector('h1').innerText = newTitle
+        document.title = newTitle
       };
 
 
@@ -205,10 +211,10 @@
        Create a welcome alert message when the page successfully loads.
       */
 
-      window.onload = function () {
-        alert("Welcome!!")
-        //
-      };
+      // window.onload = function () {
+      //   alert("Welcome!!")
+        
+      // };
 
       /* EXERCISE 13
        Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
