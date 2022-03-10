@@ -62,10 +62,7 @@
     </div>
     <script>
 
-      window.onload = function () {
-          alert("Welcome!!")
-
-        };
+      
       /* EXERCISE 1
        Write a function for changing the title of the document in something else.
       */
@@ -138,7 +135,8 @@
       const addToTheSecond = function (content) {
         let currentLists = document.getElementById("secondList")
         let newList = document.createElement("li")
-        newList.appendChild(document.createTextNode(content))
+        let listContent = document.createTextNode(content)
+        newList.appendChild(listContent)
         currentLists.appendChild(newList)
         
       };
@@ -150,7 +148,8 @@
       const addParagraph = function (content) {
        let currentPs = document.getElementById("firstDiv")
         let newP = document.createElement("p")
-        newP.appendChild(document.createTextNode(content))
+        let paraContent = document.createTextNode(content)
+        newP.appendChild(paraContent)
         currentPs.appendChild(newP)
 
       };
@@ -211,10 +210,10 @@
        Create a welcome alert message when the page successfully loads.
       */
 
-      // window.onload = function () {
-      //   alert("Welcome!!")
+      window.onload = function () {
+        alert("Welcome!!")
         
-      // };
+      };
 
       /* EXERCISE 13
        Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
