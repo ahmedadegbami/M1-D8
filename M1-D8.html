@@ -61,6 +61,8 @@
       </h2>
     </div>
     <script>
+      
+      
 
       
       /* EXERCISE 1
@@ -193,7 +195,7 @@
          document.getElementById("footer").innerText = "I FOLLOWED THE INSTRUCTIONS"
       };
         
-      ;
+      
 
       /* EXERCISE 11
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
@@ -210,11 +212,11 @@
        Create a welcome alert message when the page successfully loads.
       */
 
-      window.onload = function () {
-        alert("Welcome!!")
+      let alertWelcome = function(){
+          alert("Welcome!!")
+         };
+        window.onload = alertWelcome()
         
-      };
-
       /* EXERCISE 13
        Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
       */
